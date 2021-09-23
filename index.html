@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__item"></div>
+        <div
+          class="header__item select dflex dflex--center-horizontal language"
+        >
+          <p>Español</p>
+        </div>
+        <div
+          class="
+            header__item
+            select
+            dflex dflex--center-horizontal dflex--center-vertical
+            hamburger
+          "
+          onclick="openMenu()"
+        >
+          <p>MENU</p>
+        </div>
+        <div
+          class="
+            header__item
+            button
+            dflex dflex--center-horizontal dflex--end
+            p-0-30
+          "
+        >
+          <p>Español</p>
+        </div>
+      </header>
+
+      <nav class="menu" id="menu">
+        <div class="menu__item dflex dflex--center-vertical">
+          <img class="img_logo w-55" src="img/logo.svg" alt="" />
+          <div class="close">
+            <i class="fa-solid fa-xmark" onclick="openMenu()"></i>
+          </div>
+        </div>
+        <div class="menu__item">
+          <ul class="links">
+            <li class="links__link">
+              <a href="#" class="links__item active"> Introduccion </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> T-shirt </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> Demografía </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> Características </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> Unidades y Selectores </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> Tecnologías </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> Otras Herramientas </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> Entornos </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> Recursos </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> Opiniones </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> Premios </a>
+            </li>
+            <li class="links__link">
+              <a href="#" class="links__item"> Conclusión </a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__item dflex social">
+          <div
+            class="
+              social__item
+              dflex__1 dflex dflex--center-horizontal dflex--center-vertical
+              button
+            "
+          >
+            <i class="fa-brands fa-twitter fs-20 color-accent"></i>
+          </div>
+          <div
+            class="
+              social__item
+              dflex__1 dflex dflex--center-horizontal dflex--center-vertical
+              button
+            "
+          >
+            <i class="fa-brands fa-facebook-f fs-20 color-accent"></i>
+          </div>
+          <div
+            class="
+              social__item
+              dflex__1 dflex dflex--center-horizontal dflex--center-vertical
+              button
+            "
+          >
+            <i class="fa-brands fa-linkedin fs-20 color-accent"></i>
+          </div>
+          <div
+            class="
+              social__item
+              dflex__1 dflex dflex--center-horizontal dflex--center-vertical
+              button
+            "
+          >
+            <i class="fa-solid fa-envelope fs-20 color-accent"></i>
+          </div>
+        </div>
+      </nav>
+
+      <main class="content">
+        <div class="content__section">
+          <div class="banner dflex dflex--center-vertical">
+            <div class="c"><p>C</p></div>
+            <div class="s s--primary">S</div>
+            <div class="s s--secondary">S</div>
+          </div>
+        </div>
+        <div class="content__section">
+          <p class="paragraph">
+            Instead of breakpoints, we can now leverage CSS Grid to make
+            dynamic, responsive layouts that adapt to any viewport size with
+            fewer lines of code. Instead of relying on global stylesheets,
+            CSS-in-JS lets us colocate our styles with our components to build
+            themeable design systems. And most of all, Tailwind CSS has burst
+            onto the scene and, through its use of utility-first CSS, forced us
+            to reconsider the traditional dogma of semantic class names. Whether
+            all this change makes you want to write a hyped-up blog post or an
+            angry Twitter rant, we are here to present the data, highlight the
+            trends, and hopefully guide you through another eventful year of
+            CSS!
+          </p>
+        </div>
+        <div class="content__section">
+          <p class="paragraph">
+            Instead of breakpoints, we can now leverage CSS Grid to make
+            dynamic, responsive layouts that adapt to any viewport size with
+            fewer lines of code. Instead of relying on global stylesheets,
+            CSS-in-JS lets us colocate our styles with our components to build
+            themeable design systems. And most of all, Tailwind CSS has burst
+            onto the scene and, through its use of utility-first CSS, forced us
+            to reconsider the traditional dogma of semantic class names. Whether
+            all this change makes you want to write a hyped-up blog post or an
+            angry Twitter rant, we are here to present the data, highlight the
+            trends, and hopefully guide you through another eventful year of
+            CSS!
+          </p>
+        </div>
+        <div class="content__section">
+          <p class="paragraph">
+            Instead of breakpoints, we can now leverage CSS Grid to make
+            dynamic, responsive layouts that adapt to any viewport size with
+            fewer lines of code. Instead of relying on global stylesheets,
+            CSS-in-JS lets us colocate our styles with our components to build
+            themeable design systems. And most of all, Tailwind CSS has burst
+            onto the scene and, through its use of utility-first CSS, forced us
+            to reconsider the traditional dogma of semantic class names. Whether
+            all this change makes you want to write a hyped-up blog post or an
+            angry Twitter rant, we are here to present the data, highlight the
+            trends, and hopefully guide you through another eventful year of
+            CSS!
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      function openMenu() {
+        var element = document.getElementById("menu");
+        element.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

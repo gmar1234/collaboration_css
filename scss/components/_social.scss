@@ -1,0 +1,5 @@
+.social{
+    &__item:not(:last-child){
+        @include border(right,1px,dashed);
+    }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400&display=swap');
+
+@import 'base/reset';
+
+
+/************************/
+/* FUNCTIONS AND MIXINS */
+/************************/
+@import 'abstract/function';
+@import 'abstract/mixin';
+@import 'abstract/variables';
+
+/*************/
+/* BASE FILE */
+/*************/
+@import 'base/utilities';
+@import 'base/layout';
+@import 'base/paragraph';
+
+
+/***************/
+/* COMPONENTES */
+/***************/
+@import 'components/nav';
+@import 'components/header';
+@import 'components/content';
+@import 'components/social';
+@import 'components/select';
+@import 'components/button';
+@import 'components/banner';
+@import 'components/link';
+@import 'components/language';
+@import 'components/hamburger';
+ 
+* {
+    box-sizing: border-box;
+}

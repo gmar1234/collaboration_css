@@ -1,0 +1,45 @@
+ .links{
+    padding: 30px 20px;
+    &__link{
+        list-style: none;
+        margin: 15px 0px;
+        transition: all .5s;
+        text-shadow: 4px 2px 2px #f649a763;
+        &:hover{
+            text-shadow: 4px 2px 8px #f649a763;
+            &a::before{
+                content: "";
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                height: 2px;
+                background-color: rgb(246, 73, 167);
+                transform-origin: right bottom;
+                transform: scaleX(0);
+                transition: transform 0.5s ease 0s;
+            }
+        }
+        .active{
+            color: $color-success !important;
+            display: flex;
+            &::before{
+                content: '>';
+                margin-right: 10px;
+                font-weight: bold;
+            }
+
+            
+        }
+    }
+
+    &__item{
+        text-decoration: none;
+        color: $color-secondary;
+        font-weight: bold;
+        font-size: 15px;
+       
+    }
+
+
+ }

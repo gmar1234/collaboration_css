@@ -1,0 +1,55 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 22.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {
+            @content;
+        }
+    }
+}
+
+
+
+@mixin border($direction, $px ,$style ) {
+
+    @if $direction == all {
+
+        border : $px $style  $color-accent;
+
+    } @else if $direction == up {
+
+        border-top : $px $style  $color-accent;
+
+    } @else if $direction == down {
+
+        border-bottom : $px $style  $color-accent;
+
+    } @else if $direction == left {
+
+        border-left : $px $style  $color-accent;
+
+    } @else if $direction == right {
+
+        border-right : $px $style  $color-accent;
+
+    } @else {
+        @error "Verifique tus parametros.";
+    }
+
+}

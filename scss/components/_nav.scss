@@ -1,0 +1,22 @@
+.menu{
+    display: grid;
+    grid: 68px 1fr 64px / 1fr;
+    &__item{
+        position: relative;
+    }
+    &__item:not(:last-child){
+        @include border(down,1px,dashed);
+    }
+
+    &.active{
+        background: $color-primary;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(0%);
+        transition: all .3s;
+    }
+    @include respond(tab-port){
+        position: absolute; 
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,13 @@
+.button{
+    transition: all .3s;
+    cursor: pointer;
+    color: $color-secondary;
+    font-weight: 600;
+    
+    &:hover{
+        background-color: $color-primary-dark;
+        i{
+            color: $color-secondary!important;
+        }
+    }
+}

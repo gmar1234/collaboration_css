@@ -1,0 +1,7 @@
+.header{
+    display: grid;
+    grid: 1fr / 1fr auto 1fr;
+    &__item:not(:last-child){
+        @include border(right,1px,dashed);
+    }
+}

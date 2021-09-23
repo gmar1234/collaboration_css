@@ -1,0 +1,48 @@
+.dflex{
+    display: flex;
+    
+    &--end{
+        justify-content: end;
+    }
+    
+    &--center-vertical{
+        justify-content: center;
+    }
+    
+    &--center-horizontal{
+        align-items: center;
+    }
+
+    &__1{
+        flex: 1;
+    }
+}
+
+.p-0-30{
+    padding: 0 30px;
+}
+@for $i from 1 through 10 {
+
+    .w-#{$i*5} {
+        width: $i * 5% ;
+    }
+    
+} 
+
+@for $i from 1 through 50 {
+
+    .fs-#{$i*2} {
+        font-size: $i * 2px ;
+    }
+    
+}
+
+
+@each $theme-color, $color in $theme-colors {
+    .bg-#{$theme-color} {
+        background-color: $color !important;
+    }
+    .color-#{$theme-color} {
+        color: $color !important;
+    }
+}

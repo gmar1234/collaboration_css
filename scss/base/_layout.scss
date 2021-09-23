@@ -1,0 +1,29 @@
+.container{
+    display: grid;
+    grid: 68px 1fr 1fr / 270px 1fr 1fr;
+    grid-template-areas: "nav header header"
+                         "nav content content"
+                         "nav content content";
+                         background-color: $color-primary; 
+    position: relative;
+    @include respond(tab-port){
+        grid-template-areas: "header header header"
+                             "content content content"
+                             "content content content";
+    }
+}
+
+.header{ 
+    grid-area: header;
+    @include border(down,1px,dashed);
+}
+
+.menu{
+    grid-area: nav;
+    @include border(right,1px,dashed);
+}
+
+.content{
+    grid-area: content;
+
+} 
